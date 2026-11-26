@@ -1,7 +1,6 @@
 package com.example.tracey.ui.screens
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
@@ -10,12 +9,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ReceiptLong
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
@@ -85,7 +84,7 @@ fun MainHubScreen(
             ) {
                 val navItems = listOf(
                     Triple("Home", Icons.Default.Home, 0),
-                    Triple("History", Icons.Default.ReceiptLong, 1),
+                    Triple("History", Icons.AutoMirrored.Filled.ReceiptLong, 1),
                     Triple("Ask Tracey", Icons.Default.Pets, 2),
                     Triple("Tools", Icons.Default.AccountBalanceWallet, 3),
                     Triple("Settings", Icons.Default.Settings, 4)
